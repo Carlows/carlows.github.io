@@ -12,9 +12,9 @@ html, body, #root {
 
 canvas {
   display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 
 .App-Panel {
@@ -42,14 +42,26 @@ canvas {
   border: 5px solid #0f0;
   opacity: 0.8;
   background-color: black;
-  width: 400px;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
-h1.jobtitle {
-  font-size: 14px;
+@media (min-width: 480px) {
+  .App-Panel-title-container {
+    width: 300px;
+  }
 }
 
+h1.jobtitle {
+  font-size: 12px;
+}
+
+@media (min-width: 480px) {
+  h1.jobtitle {
+    font-size: 14px;
+  }
+}
 .App-Panel-networks {
   text-align: center;
   margin-top: 20px;

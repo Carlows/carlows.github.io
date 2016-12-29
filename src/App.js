@@ -11,7 +11,6 @@ class App extends Component {
 
   componentDidMount() {
     this.initializeMatrix();
-    setTimeout(this.initializeName, 2000);
   }
 
   initializeMatrix() {
@@ -66,7 +65,7 @@ class App extends Component {
                 cursor={{ hideWhenDone: true }}>
                 <h1>Carlos Martinez.</h1>
                 <br/>
-                <h1 className="jobtitle">Venezuelan, Software Developer, Geek!</h1>
+                <h1 className="jobtitle">Software Developer. Geek.</h1>
               </Typist>
             </div>
             <div className="App-Panel-networks">
